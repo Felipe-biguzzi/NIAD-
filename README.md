@@ -12,3 +12,5 @@ O segundo teste, utilizando apenas 3 variáveis, foi mais eficiente de todos (10
 Ademais, foram realizados testes de eficiência dos 2 modelos e respectivas apresentações gráficas. Para o segundo modelo, o mais assertivo, foi realizado também testes de poder estatístico de diferenciação entre os grupos, pois a redução de variáveis e do total de dados analisados poderia incorrer num modelo "viciado" em longo prazo, caso a diferença entre os grupos fosse significativa, mas de pequena magnitude. Porém, os testes mostram grande poder de diferenciação entre os grupos o que faz crer que mesmo que exista alguma variação no comportamento dos dados ao longo do tempo, o modelo ainda será assertivo na seleção do diagnóstico.
 
 O resultado final foi um modelo mais assertivo e com redução no trabalho de coleta de dados devido à redução de parâmetros analisados.
+
+OBS: O presente projeto foi realizado pelo notebook do Google Colab, com auxílio do Gemini, especialmente no que tange a produção e gestão do código do projeto.
