@@ -2,7 +2,7 @@ Projeto de seleção NIAD (2026-1)
 
 O banco de dados escolhido foi o de informações antropométricas para diagnostico de problema de coluna devido a maior simplicidade de manipulação dos dados, já que este está sendo meu primeiro contato com ML. O banco de dados estava homogêneo, de modo que não houve necessidade de limpeza e ajuste dos dados. A única transformação necessária foram os dados de respota/diagnóstico (normal, anormal) que foram transformados em numéricos (0,1) para análise dos dados e treinamento do modelo.
 
-A análise inicial consistiu na observação do comportamento dos dados em função dos 2 grupos (normais e anormais) através de curva gaussiana de distribuição de dados e de matriz de correlação entre variáveis. Tb foi realizado teste de significância estatística entre os grupos para certificar que iriam contribuir para a distinção dos grupos. 
+A análise inicial consistiu na observação do comportamento dos dados em função dos 2 grupos (normais e anormais) através de curva gaussiana de distribuição de dados e de matriz de correlação entre variáveis. Tb foi realizado teste de significância estatística entre os grupos para certificar que todas as variáveis/parâmetros iriam contribuir para distinção dos grupos. 
 
 Apesar de parecer um trabalho relativamente simples a distribuição dos dados revelou uma complicação: em todas as variáveis, exceto uma, os dados do grupo normal estavam totalmente contidos dentro dos dados do grupo anormal, ou seja, a diferença entre grupos poderia ser observada com maior nitidez apenas em uma variável, de modo que a distinção apurada entre os grupos iria demandar uma combinação entre variáveis e o modelo teria que fazer essa modelagem para obter maior acerto.
 
