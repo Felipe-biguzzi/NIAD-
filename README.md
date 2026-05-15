@@ -13,4 +13,4 @@ Ademais, foram realizados testes de eficiência dos 2 modelos e respectivas apre
 
 O resultado final foi um modelo mais assertivo e com redução no trabalho de coleta de dados devido à redução de parâmetros analisados.
 
-OBS: O presente projeto foi realizado pelo notebook do Google Colab, com auxílio do Gemini, especialmente no que tange a produção e gestão do código do projeto.
+OBS: O presente projeto foi realizado no notebook do Google Colab, com auxílio do Gemini, especialmente no que tange a produção e gestão do código do projeto.
