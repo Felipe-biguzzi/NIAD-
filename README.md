@@ -1,1 +1,14 @@
-# NIAD-
+Projeto de seleção NIAD (2026-1)
+
+O banco de dados escolhido foi o de informações antropométricas de diagnostico de problema de coluna devido a maior simplicidade de manipulação dos dados, já que este está sendo meu primeiro contato com ML. O banco de dados estava homogêneo, sendo assim, não houve necessidade de limpeza e ajuste dos dados. A única transformação necessária foram os dados de diagnóstico (normal, anormal) que forma transformados em numéricos (0,1) para análise dos dados e treinamento do modelo.
+
+A análise inicial consistiu na observação do comportamento dos dados em função dos 2 grupos (normais e anormais) através de curva gaussiana de distribuição de dados e de matriz de correlação entre variáveis. Tb foi realizado teste de significância estatística entre os grupos para certificar que iriam contribuir para a distinção dos grupos. 
+
+Apesar de parecer um trabalho relativamente simples a distribuição dos dados revelou uma complicação: em todas as variáveis, exceto uma, os dados do grupo normal estavam totalmente contidos dentro dos dados do grupo anormal, ou seja, a diferença entre grupos poderia ser observada com maior nitidez apenas em uma variável, de modo que a distinção apurada entre os grupos iria demandar uma combinação entre variáveis e o modelo teria que fazer essa modelagem para obter maior acerto.
+
+A escolha do modelo de treinamento foi o de regressão logística binária, pois a variável resposta é sempre "normal" ou "anormal". O modelo foi treinado e obteve resultado satisfatório (14% de erros de predição), de toda forma foram feitos mais testes selecionando algumas variáveis especificas em busca de melhores resultados.
+O segundo teste, utilizando apenas 3 variáveis, foi mais eficiente de todos (10% de erros de predição).  O critério de seleção foi incluir a variável mais importante no modelo inicial e todas as demais que contribuíram no mesmo sentido que ela, ou seja, todas que selecionavam o grupo "anormal". A ideia foi criar um modelo muito bom pra selecionar esse grupo em detrimento do outro, mas sendo apenas 2 possibilidades possíveis de resposta, poderia levar a um modelo mais assertivo. Foi o que aconteceu! Os demais testes ficaram sempre piores e não foram incluídos na apresentação deste projeto.
+
+Ademais, foram realizados testes de eficiência dos 2 modelos e respectivas apresentações gráficas. Para o segundo modelo, o mais assertivo, foi realizado também testes de poder estatístico de diferenciação entre os grupos, pois a redução de variáveis e do total de dados analisados poderia incorrer num modelo "viciado" em longo prazo, caso a diferença entre os grupos fosse significativa, mas de pequena magnitude, o que poderia "confundir" o modelo em longo prazo. Porém, os testes mostram grande poder de diferenciação entre os grupos o que faz crer que mesmo que haja variação pela adição de dados ao longo do tempo, o modelo ainda será assertivo na seleção do diagnóstico.
+
+O resultado final foi um modelo mais assertivo e com redução no trabalho de coleta de dados devido à redução de parâmetros analisados.
